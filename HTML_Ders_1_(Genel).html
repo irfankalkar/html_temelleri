@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>  <!-- "<head>" etiketi, bir HTML belgesinin başlık kısmını içerir ve sayfanın tarayıcı tarafından nasıl işleneceğine dair meta bilgiler sağlar. -->
+        <!-- Sayfanın içerik yapısını, görünümünü ve diğer özelliklerini tanımlayan unsurlar burada yer alır. -->
+
+        <!-- "meta" etiketi, HTML’de web sayfası hakkında bilgi (metadata) sağlayan bir etikettir.
+            Tarayıcılar, arama motorları ve sosyal medya platformları gibi çeşitli servisler tarafından kullanılır.
+    Genellikle sayfanın dilini, karakter setini, uyumluluk ayarlarını ve görünüm bilgilerini içerir. Meta etiketleri doğrudan sayfanın içeriğinde görünmez. -->
+
+    
+    <meta charset="UTF-8"> <!-- Burası karakter setidir. Desteklenen karakterleri belirtmek için oluşturulur. "meta" etiketinin "charset" attribute'ı ile çalışır -->
+    <!-- "UTF-8" Formatı ise Türkçe karakterleri destekleyen bir formattır. Websitenizde bu karakterlerin desteklenmesini sağlar. -->
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Website'yi Telefon ve Tablet gibi diğer cihazlara uyumlu hale getirecek "Responsive (Duyarlılık)" ayarları -->
+
+    <!-- "name" attribute'u meta etiketinin bir parçasıdır ve genellikle meta etiketine hangi tür bilgiyi içerdiğini belirtir.
+        Örneğin, name="viewport" ayarı tarayıcılara sayfanın nasıl ölçeklenip gösterileceği konusunda bilgi verir. -->
+
+    <!-- "viewport", bir cihazın görüntüleme alanını (genellikle mobil cihazlar için ekran boyutunu) tanımlar.
+     Yani, tarayıcıya sayfanın boyutlarını ve ölçekleme davranışını ayarlaması gerektiğini söyler. -->
+
+     <!-- "content" attribute'unda kullanılan "width=device-width" ayarı, sayfanın genişliğinin cihazın ekran genişliğiyle aynı olmasını sağlar.
+      Bu, özellikle mobil cihazlarda içeriğin ekrana düzgün şekilde oturmasını sağlamak için kullanılır. -->
+
+    <!-- Son olarak, "initial-scale=1.0" ayarı, sayfanın varsayılan yakınlaştırma oranını belirler.
+     "1.0" değeri, sayfanın %100 büyüklüğünde (normal boyutta) gösterilmesini ifade eder.
+     Bu, kullanıcıların sayfayı açarken herhangi bir yakınlaştırma olmadan görmesini sağlar. -->
+
+
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <!-- "<meta http-equiv="X-UA-Compatible" content="IE=edge"> etiketi ise:
+           eski Internet Explorer tarayıcılarıyla (özellikle IE8 ve IE9) uyumluluk sorunlarını çözmek için kullanılır. -->
+
+
+    <meta name="keywords" content="Sitenizin, arama, motorlarında, üstte, görünmesi, için, site, içeriğiyle, ilgili, eklenen, anahtar, kelimeler, SEO AYARLARI">
+    <meta name="description" content="Sitenizin içeriğiyle ilgili açıklama, site içeriğinin özeti, daha siteye girilmeden arama motorunda gösterilen açıklama.">
+
+    <title> Sitenizin başlığıdır. Tarayıcıdaki sitenizin açık olduğu sekmede görünen isim olarak kendini gösterir... </title>
+
+    <style>
+        .ortalanmis-tablo-yazilari
+        {
+            text-align: center; /* Yatayda ortala */
+            vertical-align: middle; /* Dikeyde ortala */
+            /* height: 100px;   Hücre yüksekliği */
+        }
+
+        .form_bolumler_1_2
+        {
+            width: 19%;
+            float: left;
+        }
+
+        .form_bolumler_3
+        {
+            width: 50%;
+            float: left;
+        }
+
+        .form_bolumler_3_butonlar
+        {
+            width: 8.7%;
+            float: right;
+            margin-right: 178px;
+        }
+
+        h2
+        {
+            margin-bottom: 1px;
+        }
+
+        hr
+        {
+            height:2px;
+            background-color: black;
+        }
+
+
+        #listeler_dis_yuzey
+        {
+            width: 100%;
+            height: 300px;
+        }
+
+        .liste_1_2
+        {
+            width: 600px;
+            float: left;
+        }
+
+    </style>
+    
+</head>
+
+
+
+
+
+<body>  <!-- Web sayfasının içerik başlangıcı. -->
+
+
+    <!-- BLOK ELEMENTLER NEDİR -->
+<!-- Yaptığınız site üzerinde sağ tıklayıp "Sayfayı İncele" dediğinizde "Seçici" aracıyla objelerinizin üzerine geldiğiniz zaman, -->
+ <!-- O objenin genişlik boyu küçük olmasına rağmen soldan sağa doğru tam bir alanı kaplayacak kadar yer işgal eden objelere -->
+  <!-- "BLOK" elementi denmektedir. BLOK elementlerden sonraki içerikler bir alt satırdan başlar. -->
+   
+
+      <!-- IN LINE ELEMENTLER NEDİR -->
+  <!-- "IN-LINE" elementleri var bir de, isminden de anlaşılacağı üzere "SATIR İÇİ ELEMENTLER"... Bunlar ise bir satır boyunca bir den çok elementin bir satıra -->
+<!-- yerleştirilebileceği elementlerdir. Bunları sonra göreceğiz... -->
+
+
+
+    <!-- Bu aşağıdakiler sitemize ekleyeceğimiz 6 farklı boyuttaki BAŞLIK boyutları... -->
+
+    <h1> H1 Boyutu Başlık </h1>     <!-- BR Etiketi denen birşey var, alt satıra geçmeye yarar... -->
+    <h2> H2 Boyutu Başlık </h2>     <!-- Ama ben BR Etiketi kullanmadım bunların arasında, neden bunların çıktısında her biri bir alt satıra geçti ? -->
+    <h3> H3 Boyutu Başlık </h3>     <!-- Çünkü bunların her biri "BLOK" elementi, ve bir satır boyunca yer kaplar. Bir sonraki element alt satırdan başlar. -->
+    <h4> H4 Boyutu Başlık </h4>
+    <h5> H5 Boyutu Başlık </h5>     <!-- Sakın ben bunları kodlarken alt alta yazdım diye bu sebeple çıktıda alt alta gözüktüğünü düşünmeyin. Alakası yok. -->
+    <h6> H6 Boyutu Başlık </h6>     <!-- Mesela aşağıda bunları yanyana yazacağım. Sonuç yine aynı olacak... -->
+
+
+    <br>
+    <br>
+    <hr> <!-- Burada bir satır boyu çizgi ekledim. Bazı elementlerin kapatması yoktur. Sadece açılarak kullanılır. Bu da onlardan birisi... ____________________ -->
+    <br>
+    <br>
+
+
+    <h1> H1 Boyutu Başlık </h1> <h2> H2 Boyutu Başlık </h2> <h3> H3 Boyutu Başlık </h3> <h4> H4 Boyutu Başlık </h4> <h5> H5 Boyutu Başlık </h5> <h6> H6 Boyutu Başlık </h6>
+     <!-- Bakın mesela burada yanyana yazdım. Ama çıktılar alt alta işlemiş oldu. -->    
+     
+     <!-- SEBEP 1: Etiketlerin açıldığı yer belli, kapandığı yer belli. Etiketlerin birbirinden bağımsız halde olduğu belli. -->
+     <!-- Burada kodun içinde bunları yanyana yazmam, bunları çıktıda tek bir satırda birleştirmek gibi bir saçmalık oluşturmaz. Yada bunları tek parça yapmaz. -->
+
+     <!-- SEBEP 2: Bunların birbirinden bağımsız etiketler olduğunu artık bildiğimize göre, diğer bildiğimiz şeyde bunların BLOK elementler olduğudur... -->
+     <!-- Yani her bir element bir satır boyunca yer kaplayacaktır. Bu sebeple her bir element bir sonraki satırdan başlayacaktır. -->
+
+
+     <br>
+     <br>
+     <hr> <!-- __________________________________________________________________________________________________________________________________________________ -->
+     <br>
+     <br>
+    
+
+    <!-- AŞAĞIDAKİ YAZI KASITLI OLARAK ETİKETSİZ YAZILMIŞTIR... -->
+    P etiketini kullanmadan yada hiçbir etiket kullanmadan da yazı yazabiliyorum. Ama bu doğru bir yöntem değil.
+    Yanlış üzerinden doğruyu anlatmak için böyle bir yol izliyorum. Doğrusu, aslında her bir içeriğin bir alan içerisinde yer aldığı yöntemdir.
+    Yani her bir içerik aslında illa ki belirli bir etiketin arasında bulunmalı. O sebeple bu yazım şekli tamamen yanlıştır.
+    Normal şartlarda bu yazı hiçbir alt satıra geçmeden boydan boya satır boyunca görünür. Satırın sonuna gelince ise, daha doğrusu sayfanın
+    sığdığı alanın sonuna gelince ise taşma nedeniyle alt satıra kayar. Ama manuel olarak alt satıra geçmek gibi doğal bir işlem değildir bu.
+    Sayfayı yakınlaştırıp uzaklaştırdığınızda aslında yazının tek satır olduğunu göreceksiniz.
+        "Ben şu an alt satıra geçtim, hatta gördüğünüz gibi bu satır TAB tuşuyla içerden başlıyor. Farketmez, bu yazı yine tek satır bir yazı gibi yanyana gözükecektir.
+
+    "Şu anda ise resmen yeni bir paragraftan başladım. Ama aslında çıktı olarak hala aynı satırdayım. Yani hala tek bir satır..."
+
+
+    <br>
+    <br>
+    <hr> <!-- __________________________________________________________________________________________________________________________________________________ -->
+    <br>
+    <br>
+
+
+    <p> Yeni bir paragrafa geçmek istiyorsam aslında yapacağım şey yazımı bu "p" etiketlerin arasında kullanmaktı. </p>
+
+
+    <p>
+        Peki yeni bir paragrafa değil de yeni bir satıra geçmek istiyorsam ne yapacağım. O zaman ise;
+        <br> sol taraftaki gibi "br" etiketini kullanacağım...
+    </p>
+
+    
+    <p>
+        Tamam şimdi ise hem alt satıra geçelim, hem de bir TAB boşluk bırakalım.
+        <br> Burada "br" etiketiyle alt satıra geçtim. Ama TAB eklemek için HTML'de özel bir komut yok.
+        <br> Bırakın TAB'ı bir kenara, şu an etiketlerin içinde yazdığım bir yazıda bile kelimeler arasındaki boşluklar Default olarak (tek bir boşluk)'la ayrılır.
+        
+        <br> Deneyelim hemen BOŞLUK için:  Sol taraftan 2 karakter boşluk bıraktım. Ama çıktıda 2 karakter boşluk yok sadece 1 karakter boşluk var.
+        <br> Deneyelim hemen TAB için:   Sol tarafta 1 TAB boşluk bıraktım. Ama çıktıda yine sadece 1 karakter boşluk var.
+    </p>
+
+    <p>
+        <!-- BOŞLUK ve TAB'ı nasıl yapacağımızdan bahsetmeden önce KAÇIŞ karakterlerinden bahsedelim. Çünkü çıktılarda komutların da görünmesini istiyorum. -->
+        <!-- KAÇIŞ KARAKTERLERİ, HTML dilinde normal çıktı olarak yazacağımız bir yazı içinde komutları da yazdırmak için kullanılır. -->
+        <!-- Normal şartlarda yazının içine komutu yazarsan, komutu çıktı olarak vermez, komutun işlevini yerine getirir. -->
+        <!-- Kaçış karakteri ise komutun işlevini pasif hale getirerek onu yazı olarak göstermemizi sağlar.-->
+        
+        Mesela <!-- &nbsp;" --> bu komut bir karakterlik boşluk oluşturmaya yarar. Ama yorum satırına eklediğim için çıktıda görünmeyecek.
+        <br> Ama ben bunu yorum satırına eklemeden direkt &nbsp; bu şekilde yazsam. Yine çıktıda görünmeyecek ama kendi işlevini yerine getirecek
+        <br> Yani ekstra bir boşluk karakteri bırakacak.
+        <br> İki yukarıdaki satırda "direkt" kelimesiyle "bu" kelimesi arasında bir detay var.
+        <br> Normalde iki kelime arasında ne kadar boşluk bırakırsam bırakayım bir karakter boşluk olacağını söylemiştim.
+        <br> Fakat bu kelimelerin her birini birer öğe olarak kabul edersek, ve &nbsp;'yi de bir öğe olarak kabul edersek,
+        <br> öğeler arasındaki boşlukların da çıktıya boşluk olarak işleyeceğini göz önünde bulundursak toplamda 3 boşluk oluyor.
+        <br>
+        <br> Yani normalde sadece &nbsp;'yi kaldırdığımızda aslında "direkt" ile "bu" kelimeleri arasında iki boşluk kalacak ama çıktı bir boşluk yazacak.
+        <br> Fakat &nbsp;'yi eklediğimiz için "direkt" ile "&nbsp;" arasında 1 boşluk, "&nbsp;" ile "bu" arasında 1 boşluk, &nbsp;'nin kendisi de ayrı bir boşluk.
+        <br> Yani 3 tane öğenin araları toplamda 2 boşluk, &nbsp; ise kendisi 1 boşluk olduğu için toplamda 3 boşluk bırakılacak çıktıda...
+        <br>
+        <br> Ama aslında 3 tane boşluk şu şekilde de yapılır.: "Kelime_1&nbsp;&nbsp;&nbsp;Kelime_2"
+        <br> Yani kelimeler veya &nbsp; öğeleri arasında hiç boşluk bırakmadım. Sadece &nbsp;'nin kendi boşlukları var.
+        <br> 3 tane &nbsp;'yi yanyana kullandığım için toplamda 3 boşluk oluştu.
+
+        <!-- Bu kısım anlaşıldı sanırım. Yukarıdaki anlatımda "&nbsp;" öğesini ya yorum satırı içinde kullandım, -->
+         <!-- ki böylece ne işlevini yerine getirdi, ne de çıktı olarak basıldı. -->
+
+         <!-- Yada yorum satırı dışında kullandım. Böylece işlevini çıktıya bir boşluk bırakarak yerine getirdi. -->
+        <!-- Ama çıktının kendisinde "&nbsp;" yazısı gözükmüyor. Şimdi "&nbsp;" yazısını, yani bir işlevi yerine getiren komutu, işlevi pasif hale getirerek -->
+         <!-- sadece komutun nasıl yazıldığını çıktıya nasıl gösteririz. Ona gelelim... Bunu yukarıda da bahsettiğim üzere KAÇIŞ KARAKTERİYLE yapacağız. -->
+
+        <br>
+        <br>
+        <br> Kaçış Karakterleri şu şekilde &amp;nbsp; kullanılır. <!-- &amp ifadesiyle kullanılır. -->
+        <br> "&" ifadesi "ampersant" anlamına gelir. "&" ifadesi ve "ampersant" kelimesinin ilk 3 harfi birleştirilerek bu kaçış karakteri gerçekleşir. -->
+        <br> Sadece başı "&" ile başlayan komutlara kullanılan bir kaçış karakteridir.
+        <br> "&" ve "amp" birleşik şekilde yazıldıktan sonra, normalde "&" ile başlayan komutumuz ise "&" işareti olmadan devamına eklenerek yapılır.
+        <br> Sonuç olarak çıktıya "&nbsp;" komutumuz yazılı olarak çıkmış olur. Yani "&amp;" = "&" işarete denk gelmektedir.
+        <br>
+        <br> ŞİMDİ BOŞLUKLARI TEKRAR DENEYELİM "&amp;NBSP;" ile...
+        <br> Deneyelim hemen BOŞLUK için:&nbsp;&nbsp;Sol taraftan 2 karakter boşluk bırakmak için 2 tane "&nbsp;" yi yanyana kullandım. 2 Boşluk çıktıda oluştu.
+        <br> Deneyelim hemen TAB için:&nbsp;&nbsp;&nbsp;&nbsp;Sol tarafta 1 TAB boşluk bırakmak için 4 tane "&nbsp;" yi yanyana kullandım. 1 TAB çıktıda oluştu.
+    </p>
+
+
+    <br>
+    <br>
+    <hr> <!-- __________________________________________________________________________________________________________________________________________________ -->
+    <br>
+    <br>
+
+
+    <!-- Aşağıda hem KALIN harfin hangi etiketlerle yapılabileceğini, hem de etiketlerin katman şeklinde nasıl iç içe kullanılabildiğini görüyorsunuz. -->
+    <p> Tamam şimdi yazımızı <strong> STRONG </strong> etiketiyle <strong> KALIN </strong> yapalım. Bu etiket içine aldığı yazıyı KALIN yazar. </p>
+    <p> Tamam şimdi yazımızı <b> B </b> etiketiyle <b> KALIN </b> yapalım. Bu etiket de içine aldığı yazıyı KALIN yazar. </p>
+
+    <!-- Aşağıda ÜSTÜ ÇİZİLİ yazının nasıl yazıldığını görmektesiniz. -->
+    <p> Tamam şimdi yazımızı <del> DEL </del> etiketiyle <del> ÜSTÜ ÇİZİLİ </del> yapalım. Bu etiket içine aldığı yazıyı ÜSTÜ ÇİZİLİ yazar. </p>
+    <p> Tamam şimdi yazımızı <s> S </s> etiketiyle <s> ÜSTÜ ÇİZİLİ </s> yapalım. Bu etiket de içine aldığı yazıyı ÜSTÜ ÇİZİLİ yazar. </p>
+
+
+
+    <!-- Kalan kısmı daha hızlı gösterelim. -->
+    <br>
+    <br> <i> İTALİK </i>
+    <br>
+    <br> <u> ALTI ÇİZİLİ </u>
+    <br>
+    <br> <mark> İŞARETLİ </mark>
+    <br>
+    <br> <mark> <i> <s> <u> <b> İŞARETLİ, İTALİK, ÜSTÜ_ÇİZİLİ, ALTI_ÇİZİLİ, ve KALIN (Hepsi bir arada) </b> </u> </s> </i> </mark>
+
+
+    <br>
+    <br>
+    <hr> <!-- __________________________________________________________________________________________________________________________________________________ -->
+    <br>
+    <br>
+
+
+
+    <!-- src= "source" (Yani resmin çekildiği yol. Biz burada dosya yolundan çektik resmi. URL yazarak internetten de çekebilirdik görseli) -->
+
+    <!-- alt="alternative" (Bu ise resim, zayıf internet yada görsel bulunamaması gibi nedenlerle yüklenemediği durumlarda) -->
+     <!-- kullanıcıya bilgi çıktısı yazdıran bir alan. Oraya ne yazarsanız, resim yüklenemediğinde kullanıcıya o gözükecek. -->
+    <img src="resimler/resim_1.jpg"
+         alt="Resim yüklenemediği durumlarda kullanıcıya bilgi vermek amaçlı Resim Açıklaması yada Resim İsmi. Resim yüklendiyse bu yazı görünmez."/>
+
+
+
+    <!-- Yukarıdaki resim, sayfada kendi orjinal boyutunda kocaman şekilde yer almakta. Çünkü biz o resim için herhangi bir boyut belirlemedik. -->
+
+
+
+    <!-- Ama şimdi aşağıda ise eklediğimiz resme "width" ile "genişlik" belirtme seçeneği ekledik. Ve değerini 50 girdik. -->
+
+     <!-- Normalde "width (genişlik)" ve "height (yükseklik)" şeklinde iki tane boyut var. Siz bunlardan saddece birini girerseniz, -->
+      <!-- Diğer boyutu otomatik olarak oran orantı şeklinde kendisi ayarlar.-->
+    <img src="resimler/resim_1.jpg" alt="Resim yüklenemediği durumlarda kullanıcıya bilgi vermek amaçlı Resim Açıklaması yada Resim İsmi." width="50"/>
+
+
+    <!-- Ama şimdi de "height" ile "yükseklik" belirleyerek ve bu sefer onun değerini 50 girerek ekledim aynı resmi tekrar. -->
+    <!-- Ama bu sefer de "width" girmedim. Şimdi ise "height" boyutuna göre "width"in boyutunu resmin orjinal oranını göz önünde bulundurarak otomatik ayarlayacak. -->
+    <!-- Kıyaslayın, bakın ne olmuş... -->
+      <img src="resimler/resim_1.jpg" alt="Resim yüklenemediği durumlarda kullanıcıya bilgi vermek amaçlı Resim Açıklaması yada Resim İsmi." height="50"/>
+
+
+
+    <!-- Şimdi ise her iki boyutu da kendim belirledim, oran orantıyı korumaksızın benim belirttiğim boyutlara göre resmi boyutlandırdı. -->
+      <img src="resimler/resim_1.jpg" alt="Resim yüklenemediği durumlarda bilgi vermek amaçlı Resim Açıklaması yada Resim İsmi." width="200" height="200"/>
+
+
+    <!-- Şimdi de internetten veri çekelim. Sadece resim linkini kopyalayıp "src" içine yapıştırıyoruz. -->
+    <img src="https://msreklam.net/wp-content/uploads/2020/08/bayrak.jpg"
+         alt="Resim yüklenemediği durumlarda bilgi vermek amaçlı Resim Açıklaması yada Resim İsmi." width="175"/>
+
+
+
+    <!-- Birşey farkettiniz mi? Resimler neden alt alta geçmedi? Neden yanyanalar? -->
+     <!-- Çünkü bu <img> etiketi bir BLOK element değil, bir IN LINE (SATIR İÇİ) elementtir. Yani bir satır boyunca yanyana geçebilen elementlerdir. -->
+
+
+
+
+     <br>
+     <br>
+     <hr> <!-- __________________________________________________________________________________________________________________________________________________ -->
+     <br>
+     <br>
+
+     <h3> <b> <u> LOCAL SUNUCU'DAN VİDEO ÇEKTİM. İlkinde "CONTROLS" özellikleri yok. İkincisinde "CONTROLS" özellikleri var. </u> </b> </h3>
+     <br>
+     <i><b>Bu sebeple ilk video bir resim gibi duracak, videoyu başlatamayacaksınız. Ama ikinci video "CONTROLS" özelliklerine sahip olduğu için başlatılabilecek.</b></i>
+     <br>
+     <br>
+
+    <video src="videolar/video_1.mp4" width="510" height="300">  </video>
+
+    <video src="videolar/video_1.mp4" width="510" height="300" controls> </video>
+
+
+
+     <br>
+     <br>
+     <hr> <!-- __________________________________________________________________________________________________________________________________________________ -->
+     <br>
+     <br>
+
+     <h3> <b> <u> IFRAME ile sol tarafta Websitemi çektim, sağ tarafta ise Youtube'dan bir Video Çektim.. </u> </b> </h3>
+     <br>
+
+     <iframe src="https://irfankalkar.com/" frameborder="10" width="800" height="500"></iframe>
+
+     &nbsp;&nbsp;&nbsp;&nbsp;
+
+     <iframe width="650" height="500" src="https://www.youtube.com/embed/SU56aTRbTQ8?si=mj5auF1Cg00V__Xy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+     <br>
+     <br>
+     <hr> <!-- __________________________________________________________________________________________________________________________________________________ -->
+     <br>
+     <br>
+
+
+
+
+
+    <div> <!-- "Div" bir çeşit bir bölmedir. Bir kutudur? Sayfanızdaki objeleri alanlara bölmenize ve dağıtmanıza yarar.-->
+
+
+        <!-- "a" etiketi site içerisinde link vermek için kullanılır. "href" attribute'ı ise verilecek linki tutar. -->
+        <!-- a etiketi dışında "Sayfama Gitmek için" yazmışım. Ve "a" etiketleri arasında "Tıklayınız" yazarak devam etmişim. -->
+        <!-- İşte "a" etiketleri arasında yazdığım bu yazı tıklanabilecek bir linke dönüşür. Tıklanabilecek bir yazıya dönüşür. -->
+        <!-- Tıkladığınızda ise AYNI SAYFADA "href" attribute'unun içindeki linke gider. -->
+        Websitem'e gitmek için
+        <a href="https://irfankalkar.com/">Tıklayınız</a>
+
+
+        <br>
+        <br>
+
+        
+        <!-- "target" etiketi linkin nasıl açılacağını belirtir. Yukarıdaki örnekte bir "target" belirtmediğimiz için DEFAULT olarak linki AYNI SAYFADA açıyordu. -->
+        <!-- Şimdi burada ise "target" etiketi belirterek "_blank" özelliği sayesinde linki YENİ SEKMEDE AÇMASINI sağlıyoruz. -->
+        <!-- "target etiketinin başka özellikleri de mevcut, fakat gerek duymadığımız taktirde onlarla vakit kaybetmeyeceğiz."-->
+        Websitem'e gitmek için
+        <a href="https://irfankalkar.com/" target="_blank">Tıklayınız</a>
+
+
+        <br>
+        <br>
+
+        
+        <!-- "Bir linki bir yazıya değil, bir resme bağlamak da mümkün. Bunun için "a" etiketlerinin arasına yazı eklemek yerine resim ekliyoruz. -->
+        <!-- Hepsi bu kadar... -->
+        <a href="https://irfankalkar.com/" target="_blank">     <img src="resimler/resim_ik.jpg" alt="İkon Bulunamadı" width="50" height="50"/>     </a>
+
+    
+    </div>
+
+
+
+    <br>
+    <br>
+    <hr> <!-- __________________________________________________________________________________________________________________________________________________ -->
+    <br>
+    <br>
+
+
+
+    <div id="listeler_dis_yuzey">
+
+        <h2> <u> Normalde bunlar da BLOK elementlerdir. Fakat DIV ve CSS kullanılarak yanyana getirilmişlerdir. </u> </h2>
+
+    <!-- "OL (ORDINARY LISTS) yani (SIRALI LİSTELER)... Sayılar, Rome Rakamları ve Harflerle Listeleme yapar... -->
+    <!-- Anlatması zor, koda bakın. Ardından çıktıya bakın. Az inceleyin. Ardından anlayacaksınız zaten... -->
+    <!--Dış Listeler OL etiketi ile, İç listeler ise Lİ etiketi ile oluşturulur... -->
+
+        <div class="liste_1_2">
+            
+            <h2> SIRALI LİSTELER (Ordinary Lists) "ol" </h2>
+            <br>
+            
+            <ol type="1">
+
+                <li>
+                    İç Donanım Birimleri
+                    <ol type="I">
+                        <li>Anakart</li>
+                        <li>İşlemci</li>
+                        <li>Bellek</li>
+                    </ol>
+                </li>
+
+                <li>
+                    Dış Donanım Birimleri
+
+                    <ol type="1">
+                        <li>Monitor</li>
+
+                        <ol type="a">
+                            <li>LCD</li>
+                            <li>LED</li>
+                        </ol>
+
+                        <li>Klavye</li>
+                        <li>Fare</li>
+                    </ol>
+
+                </li>
+
+            </ol>
+        </div>
+
+
+
+
+        <!-- "UL (UNORDINARY LISTS) yani (SIRASIZ LİSTELER)... Sadece maddeleme işaretleriyle listeleme yapar... -->
+        <!-- Anlatması zor, koda bakın. Ardından çıktıya bakın. Az inceleyin. Ardından anlayacaksınız zaten... -->
+        <!--Dış Listeler OL etiketi ile, İç listeler ise Lİ etiketi ile oluşturulur... -->
+
+        <div class="liste_1_2">
+            
+            <h2>SIRASIZ LİSTELER (Unordinary Lists) "ul" </h2>
+            <br>
+
+            <ul>
+                <li class="item">Falan</li>
+                <li class="item">Filan</li>
+                <li class="item">Inter</li>
+                <li class="item">Milan</li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <br>
+    <br>
+    <hr> <!-- __________________________________________________________________________________________________________________________________________________ -->
+    <br>
+
+
+
+    <h3> <b> <u> Yapmaya Çalıştığım Tablo Örneği Görseli </u> </b> </h3>
+    <br>
+    <i><b>Görsele tıklayarak bu tabloyu yapmaya çalışanların kodlarına erişebilirsiniz.</b></i>
+    <br>
+    <a href="https://stackoverflow.com/questions/22311309/html-table-complex-layout-specificel" target="_blank"> <img src="resimler/Tablo_Ornegi.gif" alt="İkon Bulunamadı" width="515"/> </a>
+
+
+    <br>
+    <br>
+    <hr> <!-- __________________________________________________________________________________________________________________________________________________ -->
+    <br>
+
+
+    <h3> <b> <u> Benim Çalışmam </u> </b> </h3>
+
+
+
+    <!-- BU TABLO MEVZUSU BİRAZ KARIŞIK. BUNU ANLATMAM UZUN SÜRECEK. BUNU YAZIYLA AÇIKLAYAMAM. ANCAK TABLOLARIN NASIL YAPILDIĞINI UNUTTUĞUNUZDA VİDEOLARDAN DESTEK ALABİLİRSİNİZ -->
+     <!-- VE PRATİKLER YAPARAK KULLANIMINI UNUTMAMAYA ÇALIŞABİLİRSİNİZ... -->
+    <table border="1">
+
+
+        <!-- SATIR 1 TÜMÜ-->
+        <tr>
+            <th rowspan="3"> Gün </th>
+
+            <th colspan="3">Seminer</th>
+            
+            <tr>
+                <th colspan="2">Takvim</th>
+                <th rowspan="2">Konu</th>
+            </tr>
+
+            <tr>
+                <th> &nbsp; Başlangıç &nbsp; </th>
+                <th> &nbsp;&nbsp; Bitiş &nbsp;&nbsp; </th>
+            </tr>
+
+        </tr>
+
+
+
+        <!-- SATIR 2 TÜMÜ -->
+        <tr>
+            <td rowspan="2">Pazartesi</td>
+            <td rowspan="2">08:00</td>
+            <td rowspan="2">17:00</td>
+
+            <td class="ortalanmis-tablo-yazilari"> XML'e Giriş </td>
+            <tr>
+                <td class="ortalanmis-tablo-yazilari">Geçerlilik: DTD ve Relax NG</td>
+            </tr>
+        </tr>
+
+
+
+        <!-- SATIR 3 TÜMÜ -->
+        <tr>
+            <td rowspan="3">Salı</td>
+            
+            <td>08:00</td>
+            <td>11:00</td>
+            <td rowspan="1" class="ortalanmis-tablo-yazilari"> XPath </td>
+
+            <tr>
+                <td>11:00</td>
+                <td>14:00</td>
+                <td rowspan="1" class="ortalanmis-tablo-yazilari"> XSL Dönüşümleri </td>
+            </tr>
+
+            <tr>
+                <td>14:00</td>
+                <td>17:00</td>
+            </tr>
+
+        </tr>
+
+
+        <tr>
+            <td>Çarşamba &nbsp;&nbsp; </td>
+            <td>08:00</td>
+            <td>12:00</td>
+            <td class="ortalanmis-tablo-yazilari">XSL Biçimlendirme Nesneleri</td>
+        </tr>
+
+    </table>
+
+
+
+    <br>
+    <br>
+    <hr> <!-- __________________________________________________________________________________________________________________________________________________ -->
+    <br>
+
+
+    <h3> <b> <u> ChatGPT'nin Ortaya Koyduğu Saçmalık </u> </b> </h3>
+
+
+    <table border="1">
+        <tr>
+            <th colspan="2">Day</th>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2">Topic</th>
+        </tr>
+        <tr>
+            <th colspan="2"></th>
+            <th>Begin</th>
+            <th>End</th>
+        </tr>
+        <tr>
+            <td colspan="2">Monday</td>
+            <td>8:00 a.m.</td>
+            <td>5:00 p.m.</td>
+            <td>Introduction to XML</td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td>Validity: DTD and Relax NG</td>
+        </tr>
+        <tr>
+            <td colspan="2">Tuesday</td>
+            <td>8:00 a.m.</td>
+            <td>11:00 a.m.</td>
+            <td>XPath</td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td>11:00 a.m.</td>
+            <td>2:00 p.m.</td>
+            <td>XSL Transformations</td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td>2:00 p.m.</td>
+            <td>5:00 p.m.</td>
+        </tr>
+        <tr>
+            <td colspan="2">Wednesday</td>
+            <td>8:00 a.m.</td>
+            <td>12:00 p.m.</td>
+            <td>XSL Formatting Objects</td>
+        </tr>
+    </table>
+
+
+
+    <br>
+    <br>
+    <hr> <!-- __________________________________________________________________________________________________________________________________________________ -->
+    <br>
+
+    <div>
+
+    <h2>FORM Öğeleri TABLE Kullanılarak, TABLONUN hücrelerine dizilmiştir.</h2>
+    Form öğeleri Tablonun hücrelerine yerleştirildiği için elementlerin BLOK yapısı mecburen devre dışı kaldı. CSS kullanmaya gerek kalmadı.
+    <br>
+    Sanki bir IN-LINE elementlermiş gibi oldular.
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+        <form>
+            <table>
+
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Kullanıcı Adı">
+                    </td>
+
+                    <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+
+                    <td> <b> Doğum Tarihi: </b> </td>
+
+                    <td>
+                        <input type="date" name="" id="dogumTarihi">
+                    </td>
+
+                    <td rowspan="4" colspan="3">
+                        <textarea name="" id="" placeholder="Kendinizden bahsedin..." cols="73" rows="7"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="email" placeholder="Mail Adresi">
+                    </td>
+
+                    <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+
+                    <td> <b> Medeni Durum: </b> </td>
+
+                    <td>
+                        <input type="radio" id="medeniDurum">Evli
+                        <input type="radio" id="medeniDurum">Bekar
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="tel" placeholder="Telefon Numarası">
+                    </td>
+
+                    <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+
+                    <td> <b> Cinsiyet: </b> </td>
+
+                    <td>
+                        <input type="radio" id="medeniDurum" name="cinsiyet">Erkek
+                        <input type="radio" id="medeniDurum" name="cinsiyet">Kadın
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="password" placeholder="Şifre">
+                    </td>
+
+                    <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+
+                    <td> <b> Çalışma Durumu: </b> </td>
+
+                    <td>
+                        <select name="" id="">
+                            <option value="Öğrenci"> Öğrenci </option>
+                            <option value="Çalışan"> Çalışan </option>
+                            <option value="Çalışan"> Emekli </option>
+                            <option value="İşsiz"> İşşiz </option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="password" placeholder="Şifre (Tekrar)">
+                    </td>
+
+                    <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+
+                    <td> <b> Profil Resmi Yükle: </b> </td>
+
+                    <td>
+                        <input type="file">
+                    </td>
+
+                    <td> <input type="checkbox">Üyelik Sözleşmesi'ni okudum, anladım, kabul ediyorum. </td>
+                    
+                    <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+                    
+                    <td>
+                        <input type="reset" value="Temizle">
+                            &nbsp;
+                        <input type="submit" value="Onayla">
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+
+    <br>
+    <br>
+    <hr> <!-- __________________________________________________________________________________________________________________________________________________ -->
+    <br>
+
+    <div>
+
+        <h2>FORM Öğeleri DIV'ler ve CSS Kullanılarak yanyana dizilmiştir.</h2>
+        Normal şartlarda bunlar BLOK elementleridir. CSS kullanmadan yanyana dizilemezler.
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <form>
+            
+            <div class="form_bolumler_1_2">
+                <input type="text" placeholder="Kullanıcı Adı">
+                <br>
+                <br>
+                <input type="email" placeholder="Mail Adresi">
+                <br>
+                <br>
+                <input type="tel" placeholder="Telefon Numarası">
+                <br>
+                <br>
+                <input type="password" placeholder="Şifre">
+                <br>
+                <br>
+                <input type="password" placeholder="Şifre (Tekrar)">
+                <br>
+                <br>
+                <br>
+                <u>Doğum Tarihi</u>
+                <br>
+                <input type="date" name="" id="">
+                <br>
+                <br>
+            </div>
+
+
+            <div class="form_bolumler_1_2">
+                <u>Medeni Durumu</u>
+                <br>
+                Evli: <input type="radio"
+                title="Bu Radio Buttonlara kasıtlı olarak (name) etiketi eklemedim. Böyle olunca da Radio Buttonlar birbirinden bağımsız oldu. Ve ikisi birden seçilebiliyor.">
+                <br>
+                Bekar: <input type="radio"
+                title="Bu yanlış bir yöntem. Radio Button'ların yalnızca biri seçilebilecek şekilde ayarlanabilmesi için, Radio Buttonlar'a ikisi de aynı değere sahip olan (name) etiketi eklemem gerekiyordu.">
+                <br>
+                <br>
+
+                
+                <u>Cinsiyet</u>
+                <br>
+                Erkek: <input type="radio" name="cinsiyeti">
+                <br>
+                Kadın: <input type="radio" name="cinsiyeti">
+                <br>
+                <br>
+
+
+                <u>Çalışma Durumu</u>
+                <br>
+                <select name="" id="">
+                    <option value="Öğrenci"> Öğrenci </option>
+                    <option value="Çalışan"> Çalışan </option>
+                    <option value="Çalışan"> Emekli </option>
+                    <option value="İşsiz"> İşşiz </option>
+                </select>
+                <br>
+                <br>
+
+
+                <u>Profil Resmi Yükleyiniz</u>
+                <br>
+                <input type="file">
+            </div>
+
+
+            <div class="form_bolumler_3"></div>
+                <textarea name="" id="" placeholder="Yazı girişi öğelerine, kullanıcıya bilgi vermek için böyle bir yazıyı (PLACEHOLDER) özelliğiyle ekliyorum." cols="100" rows="13"></textarea>
+                <br>
+                <br>
+
+                <input type="checkbox">Üyelik Sözleşmesi'ni okudum, anladım, kabul ediyorum.
+                
+                <div class="form_bolumler_3_butonlar">
+                    <input type="reset" value="Temizle">
+                        &nbsp;
+                    <input type="submit" value="Onayla">
+                </div>
+            </div>
+
+
+
+        </form>
+
+    </div>
+
+
+
+    <br>
+    <br>
+    <hr> <!-- __________________________________________________________________________________________________________________________________________________ -->
+    <br>
+    <br>
+
+
+   
+</body>  <!-- Web sayfasının içerik bitişi. -->
+
+</html>
